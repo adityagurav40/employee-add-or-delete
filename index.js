@@ -14,6 +14,7 @@ function addEmployee(event) {
   if (name.trim() === '' || profession.trim() === '' || age.trim() === '') {
     document.getElementById("error").innerHTML = "Error : Please Make sure All the fields are filled before in an employee !";
     document.getElementById("success").innerHTML = "";
+     document.getElementById("delete").innerHTML = "";
     return
   }
 
@@ -25,6 +26,7 @@ function addEmployee(event) {
     employees.push(employee);
     document.getElementById("success").innerHTML = "Success :Employee Added!";
     document.getElementById("error").innerHTML = "";
+   document.getElementById("delete").innerHTML = "";
 
     displayEmployee();
 
