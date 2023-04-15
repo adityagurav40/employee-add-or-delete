@@ -76,6 +76,7 @@ function displayEmployee() {
      
       document.getElementById("delete").innerHTML ="Success Employee Deleted..."
       document.getElementById("success").innerHTML = "";
+       document.getElementById("error").innerHTML = "";
       displayEmployee();
     });
 
